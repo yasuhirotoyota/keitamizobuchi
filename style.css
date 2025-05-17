@@ -279,3 +279,22 @@ form button:active {
     font-size: 1rem;
   }
 }
+.contact-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.contact-subtext {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* スマホサイズで改行させる */
+@media (max-width: 768px) {
+  .contact-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
