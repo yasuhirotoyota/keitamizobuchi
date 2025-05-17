@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>溝渕啓太 - Keita Mizobuchi -（Buchikorolin）Guitar - 京都府京都市のギタリスト　</title>
-  <meta name="description" content="京都府京都市のギタリスト、溝渕啓太 - Keita Mizobuchi -（Buchikorolin）の公式サイト。プロフィールや音源、スケジュール、ギター教室、レッスンなどのお問い合わせはこちら。">
+  <title>溝渕啓太 - Keita Mizobuchi -（Buchikorolin）Guitar</title>
+  <meta name="description" content="京都府京都市のギタリスト、溝渕啓太（Buchikorolin）の公式サイト。プロフィールや音源、スケジュール、ギター教室、レッスンなどのお問い合わせはこちら。">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -32,13 +32,12 @@
     <section id="about" class="fade-in">
       <h2>Profile</h2>
       <p>溝渕啓太（Buchikorolin）ギタリスト</p>
-      <p> スタジオミュージシャンである中村大輔氏に師事。Tuck & Pattiに影響されたプレイスタイル。現在はTinkerbell Music School、Jeugiaカルチャー、自宅個人レッスン、オンラインレッスンで講師を務める。youtubeに動画投稿活動をし、2025年現在チャンネル登録者は2万人を超えている。</p>
-
+      <p>スタジオミュージシャンである中村大輔氏に師事。Tuck & Pattiに影響されたプレイスタイル。現在はTinkerbell Music School、Jeugiaカルチャー、自宅個人レッスン、オンラインレッスンで講師を務める。YouTubeに動画投稿活動をし、2025年現在チャンネル登録者は2万人を超えている。</p>
     </section>
 
     <section id="music" class="fade-in">
       <h2>Music</h2>
-    <a href="https://m.youtube.com/channel/UC6-YsMmyvCEDUp6uij3yOPw" target="_blank">BuchikorolinのYouTubeチャンネル</a>
+      <a href="https://m.youtube.com/channel/UC6-YsMmyvCEDUp6uij3yOPw" target="_blank">BuchikorolinのYouTubeチャンネル</a>
     </section>
 
     <section id="schedule" class="fade-in">
@@ -52,7 +51,7 @@
       <h2>Contact</h2>
       <form action="https://formsubmit.co/buchikorolin.guitar@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://ここにぶっちーのurlを貼る" />
+        <input type="hidden" name="_next" value="https://あなたのURLをここに入れてください" />
         <input type="hidden" name="_autoresponse" value="お問い合わせありがとうございます。追ってご連絡いたします。" />
 
         <label for="name">お名前</label>
@@ -76,11 +75,11 @@
   <!-- Google Calendar API -->
   <script>
     const calendarId = 'buchikorolin.guitar@gmail.com';
-    const apiKey = 'ここにブッチーのAPIキーを貼る';
+    const apiKey = 'あなたのAPIキーをここに入れてください';
 
     async function fetchEvents() {
       const now = new Date().toISOString();
-      const url = https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime&maxResults=10;
+      const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime&maxResults=10`;
 
       try {
         const res = await fetch(url);
@@ -110,11 +109,11 @@
 
         let locationHtml = "";
         if (event.location) {
-          const mapUrl = https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(event.location)};
-          locationHtml = <br><a href="${mapUrl}" target="_blank" style="color:#0af;">${event.location}</a>;
+          const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(event.location)}`;
+          locationHtml = `<br><a href="${mapUrl}" target="_blank" style="color:#0af;">${event.location}</a>`;
         }
 
-        li.innerHTML = <strong>${date}</strong><br>${event.summary}${locationHtml};
+        li.innerHTML = `<strong>${date}</strong><br>${event.summary}${locationHtml}`;
         list.appendChild(li);
       });
     }
@@ -147,4 +146,5 @@
     });
   </script>
 </body>
+
 </html>
