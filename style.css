@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
-  background-color: #ffffff;
+  background-color:rgb(200, 228, 245);
   color: #000000;
   line-height: 1.6;
   min-height: 100vh;
@@ -148,7 +148,7 @@ main section {
 
 /* スケジュール */
 #schedule-list li {
-  background-color: #c2c1c1;
+  background-color: #ffffff;
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 10px;
@@ -185,7 +185,7 @@ form textarea {
   padding: 0.75rem;
   border: none;
   border-radius: 8px;
-  background-color: #c2c1c1;
+  background-color: #ffffff;
   color: #303030;
   font-size: 1rem;
 }
