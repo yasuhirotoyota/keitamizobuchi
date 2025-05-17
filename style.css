@@ -261,6 +261,9 @@ form button:active {
   .nav-links.show {
     display: flex;
   }
+  .hero {
+    background-position: right center;
+  }
 
   .hero h1 {
     font-size: 2rem;
