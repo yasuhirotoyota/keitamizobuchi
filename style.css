@@ -117,7 +117,7 @@ header {
 
 /* ヒーロー */
 .hero {
-  background: url("images/bg.jpg") no-repeat center center/cover;
+  background: url("images/back.jpg") no-repeat center center/cover;
   background-color: #ffffff;
   min-height: 100vh;
   display: flex;
