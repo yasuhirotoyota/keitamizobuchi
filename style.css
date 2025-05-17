@@ -284,7 +284,11 @@ form button:active {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 1rem;
+  border-bottom: 2px solid #444;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
+
 
 .contact-subtext {
   font-size: 1rem;
