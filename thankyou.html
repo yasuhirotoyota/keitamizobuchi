@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせありがとうございます</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <button class="menu-toggle" aria-label="メニュー">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html#about">Profile</a></li>
+          <li><a href="index.html#music">Music</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Thank You</h1>
+  </div>
+
+  <main class="fade-in" style="text-align: center; padding: 4rem 1rem;">
+    <h2>お問い合わせありがとうございます</h2>
+    <p>メッセージを受け取りました。<br>折り返しご連絡いたします。</p>
+    <a href="index.html" class="button" style="display: inline-block; margin-top: 2rem; padding: 0.75rem 1.5rem; background-color: #fff; color: #000; border-radius: 8px; text-decoration: none;">トップページに戻る</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Keita Mizobuchi</p>
+  </footer>
+
+  <!-- スクロールフェードイン -->
+  <script>
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+
+  <!-- ハンバーガーメニュー切り替え -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    });
+  </script>
+</body>
+</html>
