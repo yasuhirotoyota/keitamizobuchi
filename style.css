@@ -8,14 +8,69 @@
 body {
   font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
   background-color: #ffffff;
-  color: #eee;
+  color: #000000;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* ヘッダーとナビゲーション */
+/* ヘッダーとナビゲーション */body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
 header {
   background-color: #5f5a5a;
   padding: 1rem 0;
@@ -26,7 +81,7 @@ header {
 
 .nav-container {
   display: flex;
-  justify-content: center; /* 中央揃えに変更 */
+  justify-content: center; 
   align-items: center;
   max-width: 960px;
   margin: 0 auto;
@@ -115,7 +170,7 @@ h2 {
 }
 
 #schedule-list li {
-  background-color: #222;
+  background-color: #c2c1c1;
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 10px;
@@ -144,7 +199,7 @@ form {
 
 form label {
   font-weight: bold;
-  color: #ccc;
+  color: #000000;
 }
 
 form input,
@@ -152,15 +207,15 @@ form textarea {
   padding: 0.75rem;
   border: none;
   border-radius: 8px;
-  background-color: #222;
-  color: #eee;
+  background-color: #c2c1c1;
+  color: #303030;
   font-size: 1rem;
 }
 
 form input:focus,
 form textarea:focus {
   outline: none;
-  background-color: #333;
+  background-color: #c2c1c1;
   border: 2px solid #0af;
 }
 
@@ -185,7 +240,7 @@ form button:active {
 
 /* フッター */
 footer {
-  background-color: #000;
+  background-color: #888;
   color: #aaa;
   text-align: center;
   padding: 1rem;
@@ -232,7 +287,7 @@ footer {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    background-color: #000;
+    background-color: #888;
     padding: 1rem 0;
   }
 
