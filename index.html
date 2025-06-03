@@ -49,30 +49,28 @@
     </section>
 
     <section id="contact" class="fade-in">
-  <h2 class="contact-heading">
-  Contact
-  <span class="contact-subtext">レッスン、演奏のご依頼はこちらから</span>
-</h2>
+      <h2 class="contact-heading">
+        Contact
+        <span class="contact-subtext">レッスン、演奏のご依頼はこちらから</span>
+      </h2>
 
+      <form action="https://formsubmit.co/buchikorolin.guitar@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://buchikorolin.netlify.app/thankyou.html" />
+        <input type="hidden" name="_autoresponse" value="お問い合わせありがとうございます。追ってご連絡いたします。" />
 
-  <form action="https://formsubmit.co/buchikorolin.guitar@gmail.com" method="POST">
-    <input type="hidden" name="_captcha" value="false" />
-    <input type="hidden" name="_next" value="https://buchikorolin.netlify.app/thankyou.html" />
-    <input type="hidden" name="_autoresponse" value="お問い合わせありがとうございます。追ってご連絡いたします。" />
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" placeholder="お名前" required />
 
-    <label for="name">お名前</label>
-    <input type="text" id="name" name="name" placeholder="お名前" required />
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" placeholder="メールアドレス" required />
 
-    <label for="email">メールアドレス</label>
-    <input type="email" id="email" name="email" placeholder="メールアドレス" required />
+        <label for="message">メッセージ</label>
+        <textarea id="message" name="message" placeholder="メッセージ" rows="8" required></textarea>
 
-    <label for="message">メッセージ</label>
-    <textarea id="message" name="message" placeholder="メッセージ" rows="8" required></textarea>
-
-    <button type="submit">送信</button>
-  </form>
-</section>
-
+        <button type="submit">送信</button>
+      </form>
+    </section>
   </main>
 
   <footer>
