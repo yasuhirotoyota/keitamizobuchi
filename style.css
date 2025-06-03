@@ -315,3 +315,58 @@ form button:active {
   font-size: 1rem;
   font-weight: normal;
 }
+
+.youtube-card {
+  display: block;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.youtube-card:hover {
+  transform: scale(1.02);
+}
+
+.youtube-card-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.youtube-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+}
+
+.youtube-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-name {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.youtube-button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #FF0000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.youtube-button:hover {
+  background-color: #cc0000;
+}
